@@ -1,13 +1,339 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Барбершоп «Бородинский»</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body class="page__body">
+<html lang="ru">
 
-<script src="js/script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="header header--mobile">
+    <div class="header__nav-wrapper">
+
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="centerer-wrapper main-nav__wrapper">
+          <p class="header__logo">
+            <a class="logo">
+              <svg width="147" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="logo__pink logo__unite"
+                  d="M72.193 18.425c0-.333.133-.652.369-.89.237-.238.558-.376.897-.384h7.211c5.113 0 8.477 2.676 8.477 7.06v.06c0 4.798-4.078 7.286-8.899 7.286h-5.494v6.734a1.243 1.243 0 0 1-.332.965 1.286 1.286 0 0 1-.948.41 1.304 1.304 0 0 1-.949-.41 1.26 1.26 0 0 1-.332-.965V18.425Zm8.156 10.861c3.746 0 6.207-1.975 6.207-4.937v-.059c0-3.18-2.42-4.828-6.026-4.828h-5.725v9.785l5.544.04ZM94.019 18.267a1.243 1.243 0 0 1 .332-.965 1.286 1.286 0 0 1 .948-.41 1.304 1.304 0 0 1 .949.41 1.258 1.258 0 0 1 .332.965V38.29a1.245 1.245 0 0 1-.332.965 1.284 1.284 0 0 1-.949.41 1.304 1.304 0 0 1-.948-.41 1.26 1.26 0 0 1-.332-.965V18.267ZM103.199 18.297a1.25 1.25 0 0 1 .38-.868c.236-.23.553-.362.885-.367h.352c.261.005.516.075.743.203.226.127.416.31.552.528l13.751 17.23V18.237c0-.324.131-.636.364-.865a1.259 1.259 0 0 1 1.762 0c.233.23.364.54.364.865v20.094a1.117 1.117 0 0 1-.711 1.082 1.161 1.161 0 0 1-.454.083h-.13a1.739 1.739 0 0 1-.756-.23 1.709 1.709 0 0 1-.57-.54L105.67 21.09v17.24a1.238 1.238 0 0 1-.353.853c-.224.23-.529.366-.853.381a1.257 1.257 0 0 1-.871-.369 1.21 1.21 0 0 1-.354-.865V18.296h-.04ZM128.74 18.267a1.243 1.243 0 0 1 .332-.965 1.287 1.287 0 0 1 .949-.41 1.304 1.304 0 0 1 .948.41 1.247 1.247 0 0 1 .332.965v12.175l12.897-13.005c.264-.269.624-.428 1.004-.444.329.013.64.149.87.38.23.232.361.54.365.864a1.261 1.261 0 0 1-.421.889l-8.036 7.82 8.668 10.427c.227.258.352.587.352.928a1.287 1.287 0 0 1-.847 1.18 1.261 1.261 0 0 1-1.083-.08 1.23 1.23 0 0 1-.43-.409l-8.457-10.357-4.882 4.798v4.839a1.238 1.238 0 0 1-.373.886 1.282 1.282 0 0 1-.902.368 1.288 1.288 0 0 1-.902-.368 1.244 1.244 0 0 1-.374-.886V18.267h-.01Z"
+                  fill="#fff" />
+                <path class="logo__glasses logo__unite" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M53.8917 6.58616L58.9302 27.7312C59.0013 27.9491 59.0184 28.1815 58.98 28.4078C58.9417 28.6341 58.849 28.8472 58.7102 29.0284C58.5715 29.2096 58.3909 29.3532 58.1845 29.4465C57.978 29.5398 57.7522 29.58 57.5268 29.5635H53.5201C52.8298 35.3747 47.9494 39.8784 42.0315 39.8784C36.1136 39.8784 31.2332 35.3747 30.543 29.5635H28.5778C27.8869 35.442 22.9527 40 16.9685 40C10.9742 40 6.0335 35.4266 5.35571 29.5337H1.45014C1.22961 29.5445 1.00974 29.5014 0.808914 29.4082C0.608085 29.315 0.432119 29.1743 0.295711 28.9979C0.159304 28.8214 0.0664152 28.6144 0.0248022 28.3941C-0.0168108 28.1737 -0.00593994 27.9464 0.0565069 27.7312L5.10477 6.58616C5.45562 4.25872 7.63865 0 13.4861 0C13.8738 0 14.2456 0.156518 14.5197 0.435122C14.7939 0.713727 14.9479 1.0916 14.9479 1.4856C14.9479 1.87961 14.7939 2.25748 14.5197 2.53608C14.2456 2.81468 13.8738 2.9712 13.4861 2.9712C8.7789 2.9712 8.04797 6.6654 7.9895 7.07146L3.3408 26.6022H5.37467C6.12089 20.7847 11.0272 16.2918 16.9685 16.2918C22.9066 16.2918 27.8107 20.7798 28.5611 26.5926L30.5587 26.6017C31.3043 20.8518 36.1567 16.4134 42.0315 16.4134C47.9178 16.4134 52.7776 20.8691 53.5086 26.6353V26.5824H55.6459L51.007 7.07146C50.9387 6.6654 50.237 2.9712 45.5104 2.9712C45.1227 2.9712 44.7509 2.81468 44.4767 2.53608C44.2026 2.25748 44.0485 1.87961 44.0485 1.4856C44.0485 1.0916 44.2026 0.713727 44.4767 0.435122C44.7509 0.156518 45.1227 0 45.5104 0C51.3578 0 53.5408 4.25872 53.8917 6.58616ZM25.6722 29.5635C25.7448 29.1018 25.7825 28.6283 25.7825 28.1459C25.7825 27.6164 25.7371 27.0977 25.65 26.5935C24.9252 22.3982 21.3141 19.2097 16.9685 19.2097C12.6203 19.2097 9.00753 22.402 8.28571 26.601C8.19945 27.1028 8.15447 27.619 8.15447 28.1459C8.15447 28.6205 8.19096 29.0864 8.26125 29.541C8.92191 33.8136 12.5687 37.0821 16.9685 37.0821C21.3605 37.0821 25.0023 33.8251 25.6722 29.5635ZM50.6138 29.5635C50.6874 29.102 50.7256 28.6285 50.7256 28.1459C50.7256 23.2777 46.8331 19.3313 42.0315 19.3313C37.2299 19.3313 33.3374 23.2777 33.3374 28.1459C33.3374 28.6285 33.3756 29.102 33.4492 29.5635C34.118 33.7577 37.7058 36.9605 42.0315 36.9605C46.3572 36.9605 49.945 33.7577 50.6138 29.5635Z"
+                  fill="white " />
+                <path class="logo__stars"
+                  d="M98.94 9.746a3.678 3.678 0 0 1-2.575-1.047 3.554 3.554 0 0 1-1.07-2.528c0 .948-.384 1.857-1.066 2.528a3.668 3.668 0 0 1-2.57 1.047c.964.002 1.89.381 2.57 1.053a3.554 3.554 0 0 1 1.065 2.53c.003-.949.388-1.86 1.07-2.53a3.688 3.688 0 0 1 2.576-1.053Z"
+                  fill="#D22856" />
+                <path class="logo__glasses--desktop logo__unite"
+                  d="M43.287 19.067h.733a2.47 2.47 0 0 0-.905-.887 2.523 2.523 0 0 0-1.234-.328c-.418 0-.826-.129-1.166-.368a1.978 1.978 0 0 1-.732-.965c-.724.206-1.427.477-2.1.81h.191c.533 0 1.044.208 1.42.578.377.37.59.873.59 1.397.004.095.004.19 0 .286a8.976 8.976 0 0 1 3.203-.523Z"
+                  fill="#fff" />
+                <path class="logo__glasses--desktop logo__unite"
+                  d="m60.733 27.647-5.192-21.08C55.179 4.245 52.929 0 46.903 0c-.4 0-.783.156-1.066.434a1.469 1.469 0 0 0-.44 1.047c0 .393.158.77.44 1.047a1.52 1.52 0 0 0 1.066.434c4.871 0 5.594 3.683 5.665 4.088l4.78 19.452H55.25a11.721 11.721 0 0 0-1.724-4.78 11.946 11.946 0 0 0-3.599-3.633 2.502 2.502 0 0 0-1.116.908c-.274.404-.42.878-.42 1.363.005.086.005.171 0 .257a9.148 9.148 0 0 1 2.922 3.207 8.974 8.974 0 0 1 1.095 4.169 9.042 9.042 0 0 1-.14 1.48 8.849 8.849 0 0 1-3.05 5.393 9.132 9.132 0 0 1-5.885 2.141 9.132 9.132 0 0 1-5.885-2.141 8.849 8.849 0 0 1-3.049-5.392 9.031 9.031 0 0 1-.14-1.481c.015-1.37.341-2.72.954-3.95a2.023 2.023 0 0 1-1.33-.625 1.957 1.957 0 0 1-.538-1.35.694.694 0 0 0-.191-.483 11.566 11.566 0 0 0-1.798 4.936h-1.868a11.782 11.782 0 0 0-3.933-7.54 12.17 12.17 0 0 0-8.05-3.03 12.17 12.17 0 0 0-8.05 3.03 11.782 11.782 0 0 0-3.932 7.54H3.443L8.233 7.05c.061-.405.814-4.088 5.666-4.088.4 0 .783-.156 1.065-.434.282-.277.441-.654.441-1.047 0-.393-.159-.77-.441-1.047A1.52 1.52 0 0 0 13.899 0C7.872 0 5.623 4.246 5.26 6.566L.058 27.647a1.38 1.38 0 0 0 .247 1.263c.14.176.322.316.529.41.207.092.433.135.66.124h4.018c.082.611.21 1.215.382 1.807a.731.731 0 0 0 .1-.355c0-.524.212-1.026.589-1.397.376-.37.887-.578 1.42-.578.163.002.325.025.482.069a8.835 8.835 0 0 1-.07-1.037c.002-.496.046-.991.13-1.48a8.848 8.848 0 0 1 3.042-5.414 9.131 9.131 0 0 1 5.897-2.152c2.165 0 4.258.763 5.898 2.152a8.848 8.848 0 0 1 3.041 5.413c.085.49.128.985.131 1.481a8.87 8.87 0 0 1-2.665 6.267 9.18 9.18 0 0 1-6.374 2.62 9.146 9.146 0 0 1-5.454-1.708c-.363.31-.826.48-1.306.483a.76.76 0 0 0-.526.22.734.734 0 0 0-.217.521 1.946 1.946 0 0 1-.181.8 12.088 12.088 0 0 0 7.643 2.705 12.174 12.174 0 0 0 8.012-2.951 11.789 11.789 0 0 0 4-7.436h1.829a11.784 11.784 0 0 0 3.944 7.51A12.171 12.171 0 0 0 43.292 40c2.964 0 5.823-1.073 8.033-3.015a11.784 11.784 0 0 0 3.944-7.511h4.018c.232.016.465-.024.678-.117.212-.093.398-.236.541-.417a1.38 1.38 0 0 0 .227-1.293Z"
+                  fill="#fff" />
+                <path class="logo__stars"
+                  d="M50.92 15.917a4.576 4.576 0 0 1-1.729-.335 4.515 4.515 0 0 1-1.466-.96 4.431 4.431 0 0 1-.98-1.44 4.37 4.37 0 0 1-.344-1.699 4.406 4.406 0 0 1-1.328 3.136 4.56 4.56 0 0 1-3.192 1.298 4.57 4.57 0 0 1 3.193 1.304 4.416 4.416 0 0 1 1.327 3.14c0-1.18.476-2.31 1.323-3.143a4.56 4.56 0 0 1 3.196-1.301ZM38.074 19.383a2.786 2.786 0 0 1-1.953-.796 2.692 2.692 0 0 1-.809-1.92c0 .719-.29 1.408-.805 1.917a2.786 2.786 0 0 1-1.947.799c.73 0 1.43.285 1.946.792.516.507.806 1.196.806 1.913a2.693 2.693 0 0 1 .813-1.914 2.786 2.786 0 0 1 1.95-.791ZM10.785 33.64a2.786 2.786 0 0 1-1.94-.802 2.692 2.692 0 0 1-.802-1.913c0 .719-.29 1.408-.805 1.917a2.786 2.786 0 0 1-1.947.799c.73.002 1.43.29 1.947.799.515.508.805 1.198.805 1.916 0-.717.288-1.404.802-1.913a2.786 2.786 0 0 1 1.94-.802Z"
+                  fill="#D22856" /></svg>
+            </a>
+          </p>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <section class="promo">
+      <div class="centerer-wrapper promo__wrapper">
+        <h1 class="promo__title promo__title--index">Взгляните на жизнь иначе!</h1>
+        <img class="promo__background" src="img/phone-promo.png" alt="Телефон в руке" width="320" height="286">
+      </div>
+      <div class="apps">
+        <div class="centerer-wrapper apps__centerer-wrapper">
+          <h2 class="visually-hidden">Используйте приложения</h2>
+          <a class="apps__download button" href="https://www.apple.com/ru/app-store/">
+            Скачать приложение
+          </a>
+          <div class="apps__wrapper">
+            <a class="apps__link apps__link--apple" href="https://www.apple.com/ru/app-store/">
+              <span class="visually-hidden">app-store</span>
+            </a>
+            <a class="apps__link apps__link--android" href="https://play.google.com/store">
+              <span class="visually-hidden">google-play</span>
+            </a>
+            <a class="apps__link apps__link--windows" href="https://www.microsoft.com/ru-RU/store/apps">
+              <span class="visually-hidden">windows</span>
+            </a>
+          </div>
+          <p class="apps__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <main>
+    <section class="info">
+      <div class="info__wrapper">
+        <h2 class="info__title">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </h2>
+      </div>
+      <div class="info__detals">
+        <div class="centerer-wrapper info__wrapper-detals">
+          <section class="info__block info__mood">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-white" src="img/phone-white.png" alt="Телефон с примером фильтра"
+                width="186" height="382">
+            </div>
+            <h3 class="info__description-title">Поднимает настроение</h3>
+            <p class="info__description-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </section>
+          <section class="info__block info__world">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-sideburns" src="img/phone-sideburns.png"
+                alt="Телефон с примером фильтра" width="186" height="382">
+            </div>
+            <h3 class="info__description-title">Меняет мир вокруг</h3>
+            <p class="info__description-text">
+              Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект
+            </p>
+          </section>
+          <section class="info__block info__friends">
+            <div class="info__wrap-img">
+              <img class="info__img info__img--phone-detals" src="img/phone-detals.png" alt="Телефон с примером фильтра"
+                width="157" height="320">
+            </div>
+            <h3 class="info__description-title">Заводит новых друзей</h3>
+            <p class="info__description-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и&nbsp;заводите новых
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="effect">
+        <div class="centerer-wrapper effect__wrapper">
+          <img class="effect__img" src="img/timer.svg" alt="Таймер" width="238" height="276">
+          <div class="effect__description">
+            <h2 class="effect__title">Эффект на&nbsp;24&nbsp;часа!</h2>
+            <p class="effect__text">
+              Британские ученые провели исследования
+              и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится
+              целые сутки!
+            </p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="centerer-wrapper">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item reviews__item--visible slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-age">25 лет, водитель трамвая</span>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                  познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Котопес</cite>
+                <span class="reviews__author-age">5 лет, обычный кот или пес?</span>
+                <p class="reviews__text">
+                  «Я увидел свеого внутреннего кота или пса?!?!»
+                </p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Бэтмен</cite>
+                <span class="reviews__author-age">an old man, супергерой</span>
+                <p class="reviews__text">
+                  «Это приложение позволяет мне видеть в темноте, в то время когда очки ночного
+                  видения с Алиэкспресс не работают!»
+                </p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="toggles slider__toggles">
+            <button class="toggles__toggle toggles__toggle--current"></button>
+            <button class="toggles__toggle"></button>
+            <button class="toggles__toggle"></button>
+          </div>
+          <button class="slider__arrow slider__arrow--left" aria-label="На слайд назад" type="button"></button>
+          <button class="slider__arrow slider__arrow--right" aria-label="На слайд вперед" type="button"></button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="tariffs">
+      <div class="centerer-wrapper tariffs__wrapper">
+        <h2 class="visually-hidden">Виды тарифов</h2>
+        <table class="tariffs-table">
+          <thead class="tariffs-table__head">
+            <tr>
+              <th class="tariffs-table__type">
+
+              </th>
+              <th class="tariffs-table__type">
+                База
+                <span>1,99 USD</span>
+              </th>
+              <th class="tariffs-table__type tariffs-table__type--hit">
+                Стандарт
+                <span>3,99 USD</span>
+              </th>
+              <th class="tariffs-table__type">
+                Анлим
+                <span>9,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tariffs-table__body">
+            <tr>
+              <td class="tariffs-table__cell">
+                Розовый фильтр
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Розовый фильтр</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Смайлики
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Смайлики</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Смайлики</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Смайлики</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">
+                Комментарии
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Комментарии</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--uncheck">
+                <span>Комментарии</span>
+              </td>
+              <td class="tariffs-table__cell tariffs-table__cell--check">
+                <span>Комментарии</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="toggles tariffs__toggles">
+          <button class="toggles__toggle"></button>
+          <button class="toggles__toggle toggles__toggle--current"></button>
+          <button class="toggles__toggle"></button>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="centerer-wrapper contacts__wrapper">
+        <h3 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h3>
+
+        <div class="contacts__tel">
+          <h4 class="contacts__subtitle">Звоните:</h4>
+          <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+
+        <div class="contacts__email">
+          <h4 class="contacts__subtitle">Пишите:</h4>
+          <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </div>
+
+        <div class="contacts__adress">
+          <h4 class="contacts__subtitle">Приезжайте в гости:</h4>
+          <a href="#" class="contacts__text">ул. Большая Конюшенная, 19/8</a>
+        </div>
+
+      </div>
+      <div class="map">
+        <img class="map__img" src="img/map.png" alt="Яндекс карта" width="320" height="200">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="centerer-wrapper footer-wrapper">
+      <p class="footer__logo">
+        <a class="footer__link"></a>
+      </p>
+      <section class="footer__social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+
+        <ul class="footer__social-list socials">
+          <li class="socials__item">
+            <a class="socials__button socials__button--twitter" href="https://twitter.com/">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__button socials__button--facebook" href="https://www.facebook.com/">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__button socials__button--youtube" href="https://www.youtube.com/">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer-developer">
+        <h4 class="footer-developer__title">Разработано</h4>
+
+        <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Перейти на сайт разработчика">
+          <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
