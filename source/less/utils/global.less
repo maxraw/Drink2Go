@@ -1,0 +1,29 @@
+.body {
+  margin: 0 auto;
+  .fontfamily();
+  font-size: 14px;
+  line-height: 18px;
+  color: @granite-gray;
+  background-color: @white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.centered-wrapper {
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 0 120px;
+  }
+}
