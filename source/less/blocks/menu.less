@@ -1,0 +1,133 @@
+.top-nav {
+  display: flex;
+  align-self: center;
+  z-index: 1;
+  height: 50px;
+  color: @base-black;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .resetList();
+  margin-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: flex;
+  position: absolute;
+  top: 31px;
+  right: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: @base-black;
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#menu-toggle ~ .menu li {
+  height: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+  }
+}
+#menu-toggle:checked ~ .menu li {
+  border: 1px solid @base-black;
+  height: 57px;
+  padding: 20px, 0px, 0px, 0px;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+    border: none;
+  }
+}
+.menu > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: @base-black;
+  background-color: @base-white;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 0;
+  }
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid @base-black;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+  }
+}
