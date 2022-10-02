@@ -88,11 +88,18 @@
     <section class="promo">
       <div class="centerer-wrapper promo__centerer-wrapper">
         <div class="promo__wrapper-image">
-          <img class="promo__image" src="img/Promo_image_FlatWhite.png" alt="Кофе Флэт уайт" width="280" height="280">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/Promo_FlatWhite_desctop.png 1x, img/Promo_FlatWhite_desctop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/Promo_FlatWhite_tablet.png 1x, img/Promo_FlatWhite_tablet@2x.png 2x">
+            <img class="promo__image" src="img/Promo_FlatWhite.png" alt="Кофе Флэт уайт" width="280" height="280"
+              srcset="img/Promo_FlatWhite@2x.png 2x">
+          </picture>
         </div>
         <div class="promo__item">
           <span class="promo__item-new">Новинка!</span>
-          <h2 class="promo__item-title">Декаф Флэт Уайт</h2>
+          <h1 class="promo__item-title">Декаф Флэт Уайт</h1>
           <p class="promo__description">
             Свежесваренный кофе без кофеина из Эфиопии
             с натуральным фермерским молоком — то, что нужно
@@ -105,16 +112,16 @@
             <span class="price-item__new">
               225<span class="price-item__currency">&#8381;</span>
             </span>
-            <button class="price-item__button" type="button">Заказать</button>
+            <button class="price-item__button price-item__current button" type="button">Заказать</button>
           </div>
         </div>
-        <div class="toggles slider__toggles">
+        <div class="toggles promo__toggles">
           <button class="toggles__toggle toggles__toggle--current"></button>
           <button class="toggles__toggle"></button>
           <button class="toggles__toggle"></button>
         </div>
-        <button class="slider__arrow slider__arrow--left" aria-label="На слайд назад" type="button"></button>
-        <button class="slider__arrow slider__arrow--right" aria-label="На слайд вперед" type="button"></button>
+        <button class="promo__arrow promo__arrow--left" aria-label="На слайд назад" type="button"></button>
+        <button class="promo__arrow promo__arrow--right" aria-label="На слайд вперед" type="button"></button>
       </div>
     </section>
     <section class="advantages">
@@ -127,20 +134,20 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantage-item advantage-item--speed">
-            <h4 class="advantage-item__type">Скорость</h4>
+            <h3 class="advantage-item__type">Скорость</h3>
             <p class="advantage-item__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
           <li class="advantages__item advantage-item advantage-item--fit">
-            <h4 class="advantage-item__type">Удобство</h4>
+            <h3 class="advantage-item__type">Удобство</h3>
             <p class="advantage-item__description">Легко помещается и в карман,<br>
               и в маленькую сумочку</p>
           </li>
           <li class="advantages__item advantage-item advantage-item--energy">
-            <h4 class="advantage-item__type">Бодрость</h4>
+            <h3 class="advantage-item__type">Бодрость</h3>
             <p class="advantage-item__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="advantages__item advantage-item advantage-item--eco">
-            <h4 class="advantage-item__type">Экологичность</h4>
+            <h3 class="advantage-item__type">Экологичность</h3>
             <p class="advantage-item__description">Вся упаковка сделана<br>
               из перерабатываемых материалов</p>
           </li>
@@ -235,7 +242,7 @@
             </div>
           </div>
 
-          <div class="range__box-button">
+          <div class="filter__range range">
             <button class="button button-purple range__button" type="submit">Применить фильтр</button>
             <button class="button range__button" type="submit">Применить фильтр</button>
           </div>
@@ -256,13 +263,13 @@
                 <img class="item__image" src="img/coffee-can-1.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -277,13 +284,13 @@
                 <img class="item__image" src="img/coffee-can-2.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -298,13 +305,13 @@
                 <img class="item__image" src="img/coffee-can-3.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -319,13 +326,13 @@
                 <img class="item__image" src="img/coffee-can-4.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -340,13 +347,13 @@
                 <img class="item__image" src="img/coffee-can-5.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -361,13 +368,13 @@
                 <img class="item__image" src="img/coffee-can-6.jpg" alt="Кофе Флэт уайт" width="130" height="188">
               </div>
               <div class="item__description">
-                <h2 class="item__title">Декаф Флэт Уайт</h2>
+                <h3 class="item__title">Декаф Флэт Уайт</h3>
                 <p class="item__description">
                   Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком
                 </p>
-                <div class="item__order item__price">
-                  <span class="price-item">
+                <div class="item__order price-item">
+                  <span class="price-item__current">
                     225<span class="price-item__currency">&#8381;</span>
                   </span>
                   <button class="price-item__button" type="button">
@@ -449,30 +456,30 @@
         <div class="footer__menu-wrapper">
           <h4 class="footer__menu-title">Интернет-магазин</h4>
           <ul class="footer__list footer-menu">
-            <li class="footer-list__item footer__menu-item">
+            <li class="footer-menu__item">
               <a>Каталог</a>
             </li>
-            <li class="footer-list__item footer__menu-item">
+            <li class="footer-menu__item">
               <a>Доставка</a>
             </li>
-            <li class="footer-list__item footer__menu-item">
+            <li class="footer-menu__item">
               <a>Способы оплаты</a>
             </li>
-            <li class="footer-list__item footer__menu-item">
+            <li class="footer-menu__item">
               <a>О нас</a>
             </li>
           </ul>
         </div>
         <div class="footer__sub-menu-wrapper">
-          <h4 class="footer__menu-title">Интернет-магазин</h4>
+          <h4 class="footer__menu-title">Медиа</h4>
           <ul class="footer__list submenu">
-            <li class="submenu__item footer__menu-item">
+            <li class="submenu__item">
               <a>Блог</a>
             </li>
-            <li class="footer-list__item footer__menu-item">
+            <li class="submenu__item">
               <a>Информация для СМИ</a>
             </li>
-            <li class="footer-list__item footer__menu-item">
+            <li class="submenu__item">
               <a>Правовая информация</a>
             </li>
           </ul>

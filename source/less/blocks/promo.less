@@ -1,0 +1,61 @@
+.promo {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: @flat-white;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 308px;
+  }
+}
+
+.promo__item {
+  text-align: center;
+}
+
+.promo__item-new {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @base-primary;
+}
+
+.promo__item-title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.price-item__old {
+  font-size: 16px;
+  color: @base-primary;
+  text-decoration-line: line-through;
+}
+
+.price-item__new {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.promo__centerer-wrapper {
+  width: 608px;
+}
