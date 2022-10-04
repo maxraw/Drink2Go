@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="preload" href="fonts/MontserratBold.woff2" type="font/woff2" as="font">
@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/MontserratRegular.woff" type="font/woff" as="font">
   <link rel="preload" href="fonts/MontserratSemiBold.woff2" type="font/woff2" as="font">
   <link rel="preload" href="fonts/MontserratSemiBold.woff" type="font/woff" as="font">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
@@ -73,10 +73,8 @@
   <main>
     <section class="promo">
 
-      <div class="swiper">
-        <!-- Additional required wrapper -->
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <!-- Slides -->
           <div class="swiper-slide">
             <div class="promo__wrapper-image">
               <picture>
@@ -167,16 +165,12 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
       </div>
+      <div class="swiper-pagination"></div>
     </section>
     <section class="advantages">
       <div class="centerer-wrapper">
@@ -187,20 +181,24 @@
           </h2>
         </div>
         <ul class="advantages__list">
-          <li class="advantages__item advantage-item advantage-item--speed">
+          <li class="advantages__item">
+            <div class="advantage-item advantage-item--speed"></div>
             <h3 class="advantage-item__type">Скорость</h3>
             <p class="advantage-item__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
-          <li class="advantages__item advantage-item advantage-item--fit">
+          <li class="advantages__item">
+            <div class="advantage-item advantage-item--shield"></div>
             <h3 class="advantage-item__type">Удобство</h3>
             <p class="advantage-item__description">Легко помещается и в карман,<br>
               и в маленькую сумочку</p>
           </li>
-          <li class="advantages__item advantage-item advantage-item--energy">
+          <li class="advantages__item">
+            <div class="advantage-item advantage-item--energy"></div>
             <h3 class="advantage-item__type">Бодрость</h3>
             <p class="advantage-item__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
-          <li class="advantages__item advantage-item advantage-item--eco">
+          <li class="advantages__item">
+            <div class="advantage-item advantage-item--eco"></div>
             <h3 class="advantage-item__type">Экологичность</h3>
             <p class="advantage-item__description">Вся упаковка сделана<br>
               из перерабатываемых материалов</p>
@@ -217,22 +215,23 @@
           </h2>
         </div>
         <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="post">
-          <div class="filter__range range">
+          <div class="filter__item filter-price">
             <h4 class="filter__title">Цена</h4>
-            <div class="range__controls">
-              <div class="range__scale">
-                <div class="range__bar"></div>
-              </div>
-              <div class="range__toggle range__toggle--min"></div>
-              <div class="range__toggle range__toggle--max"></div>
-            </div>
-            <div class="range__price-fields">
-              <label class="range__label range__label--from" for="from">
-                <input class="range__input" id="from" type="text" name="min-price" value="0">
+            <div class="filter-price__slider"></div>
+            <div class="filter-price__inputs">
+              <label class="filter-price__label" for="from">
+                <input class="filter-price__input" min="0" max="1000" id="from" type="number" name="min-price"
+                  value="0">
               </label>
-              <span class="range__divider">&#8211;</span>
-              <label class="range__label range__label--before" for="before">
-                <input class="range__input" id="before" type="text" name="max-price" value="900">
+              <span>
+                <svg width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.40269 2.17684H0.597656V0.0853271H9.40269V2.17684Z"
+                    fill="#BDBDBD" />
+                </svg>
+              </span>
+              <label class="filter-price__label" for="before">
+                <input class="filter-price__input" min="0" max="1000" id="before" type="number" name="max-price"
+                  value="900">
               </label>
             </div>
           </div>
@@ -566,6 +565,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 

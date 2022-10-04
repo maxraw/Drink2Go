@@ -39,5 +39,9 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "nouislider": "^15.6.1",
+    "swiper": "^8.4.2"
+  }
 }
