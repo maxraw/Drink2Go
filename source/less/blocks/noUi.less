@@ -1,0 +1,29 @@
+.noUi-target {
+  width: 280px;
+  height: 2px;
+  background-color: @light-grey;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connect {
+  background-color: @primary-lighter;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle {
+  box-shadow: none;
+  border: 2px solid @primary-lighter;
+  border-radius: 100%;
+  background-color: @base-white;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -10px;
+  width: 24px;
+  height: 24px;
+}
