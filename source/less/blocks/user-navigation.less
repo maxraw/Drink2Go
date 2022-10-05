@@ -20,4 +20,17 @@
 
 .user-navigation__text {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.user-navigation__login,
+.user-navigation__basket {
+  display: flex;
+}
+
+.user-navigation__icon {
+  margin-right: 8px;
 }

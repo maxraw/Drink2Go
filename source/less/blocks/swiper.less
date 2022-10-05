@@ -35,4 +35,20 @@
 
 .swiper-pagination {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @media (min-width: @desktop-width) {
+    width: 64px;
+    height: 4px;
+    border-radius: 0%;
+    background-color: @base-primary;
+  }
 }

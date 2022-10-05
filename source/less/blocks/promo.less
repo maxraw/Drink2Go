@@ -8,10 +8,23 @@
     height: 640px;
     padding-top: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 100px;
+    height: 714px;
+  }
 }
 
 .promo__item {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    width: 625px;
+    text-align: start;
+  }
 }
 
 .promo__item-new {
@@ -60,6 +73,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    top: 0;
+    right: 0;
+    left: -47%;
     width: 600px;
     height: 600px;
   }
@@ -77,5 +93,10 @@
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-bottom: 48px;
   }
 }
