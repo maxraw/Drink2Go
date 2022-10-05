@@ -1,17 +1,40 @@
+.advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
 .advantages {
   padding-top: 50px;
   padding-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 248px;
+  }
 }
 
 .advantages__list {
   .resetList();
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 339px 339px;
+    grid-column-gap: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .advantages__item-type {
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .advantages__icon {
@@ -36,5 +59,22 @@
 
   &--eco {
     background-image: url("../../img/icon/leaf.svg");
+  }
+}
+
+.advantages__item {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 60px 267px;
+    grid-template-rows: 30px 60px;
+    grid-column-gap: 10px;
+    text-align: start;
+  }
+}
+
+.advantages__item-description {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    margin: 0;
   }
 }

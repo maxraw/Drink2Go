@@ -2,6 +2,12 @@
   margin-bottom: 16px;
 }
 
+.contacts__tel {
+  @media (min-width: @tablet-width) {
+    margin-left: -9px;
+  }
+}
+
 .contacts__icon {
   display: block;
   width: 20px;
@@ -17,6 +23,10 @@
   &--phone {
     background-image: url(../img/icon/phone.svg);
     background-size: 13px 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
   }
 }
 

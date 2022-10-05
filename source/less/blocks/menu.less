@@ -29,8 +29,12 @@
 }
 
 .menu > li {
-  margin: 0 1rem;
+  margin: 0 16px;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .menu-button-container {
@@ -128,6 +132,7 @@
   border-bottom: 1px solid @base-black;
 
   @media (min-width: @tablet-width) {
-    margin-right: 35px;
+    margin-right: 40px;
+    margin-left: 0;
   }
 }

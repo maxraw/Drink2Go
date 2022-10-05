@@ -1,6 +1,10 @@
 .swiper {
   width: 100%;
   height: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 826px;
+  }
 }
 
 .swiper-slide {
@@ -18,6 +22,10 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .swiper {

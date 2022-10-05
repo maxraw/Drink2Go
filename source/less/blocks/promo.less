@@ -5,7 +5,8 @@
   background-color: @flat-white;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 308px;
+    height: 640px;
+    padding-top: 60px;
   }
 }
 
@@ -25,6 +26,14 @@
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+    font-weight: 700;
+  }
 }
 
 .price-item__old {
@@ -44,7 +53,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 20%;
     width: 476px;
     height: 476px;
@@ -59,5 +68,14 @@
 .promo__centerer-wrapper {
   @media (min-width: @tablet-width) {
     width: 608px;
+  }
+}
+
+.promo__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 80px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }

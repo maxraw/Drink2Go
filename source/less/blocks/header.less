@@ -5,9 +5,50 @@
 .header__nav-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    justify-content: start;
+  }
 }
 
 .header__logo {
+  order: 0;
   margin: 0;
   margin-right: 110px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.header__logo-element {
+  display: none;
+
+  &--desctop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.header__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 160px;
+    margin-right: 162px;
+  }
 }

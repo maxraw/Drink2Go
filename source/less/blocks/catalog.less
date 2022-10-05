@@ -2,6 +2,10 @@
   padding-top: 50px;
   padding-bottom: 44px;
   background-color: @lightest-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 90px;
+  }
 }
 
 .catalog__select {
@@ -11,6 +15,10 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 #select-category {
@@ -33,4 +41,20 @@
   background-size: 0.65em auto, 100%;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.catalog__items {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
 }

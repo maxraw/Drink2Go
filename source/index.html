@@ -26,13 +26,20 @@
       <div class="header__nav-wrapper">
         <p class="header__logo">
           <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="logo-element header__logo-element">
+              D<span class="logo-element header__logo-element--desctop">rink</span>
+            </span>
             <svg width="32" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M32 18C32 20.8737 31.4014 23.5901 30.3369 26H17C19.4627 22.2281 22 17.6606 22 13C22 7.00236 17.9385 1.95335 12.4158 0.453392C13.5681 0.156712 14.7678 0 16 0C24.8366 0 32 8.05888 32 18ZM18 13C18 8.02944 13.9706 4 9 4C2.34935 4 0 12.5071 0 18C0 27.9411 7.16344 36 16 36C20.7387 36 24.9962 33.6825 27.9259 30H9C9.35183 29.5514 9.72025 29.0891 10.0987 28.6142C13.6157 24.2012 18 18.6997 18 13Z"
                 fill="#7859CF" />
             </svg>
+            <span class="logo-element header__logo-element">
+              G<span class="logo-element header__logo-element--desctop">o</span>
+            </span>
           </a>
         </p>
+        <p class="header__text">Интернет-магазин кофейных напитков</p>
         <ul class="header__user-menu user-navigation">
           <li class="user-navigation__item">
             <a class="user-navigation__login">
@@ -69,13 +76,11 @@
             <li>О нас</li>
           </ul>
         </nav>
-
       </div>
     </div>
   </header>
   <main>
     <section class="promo">
-
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -94,8 +99,8 @@
               <h1 class="promo__item-title">Декаф Флэт Уайт</h1>
               <p class="promo__description">
                 Свежесваренный кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком — то, что нужно
-                для расслабления после тяжёлого рабочего дня
+                с&nbsp;натуральным&nbsp;фермерским молоком — то, что нужно
+                для&nbsp;расслабления после тяжёлого рабочего дня
               </p>
               <div class="promo__item-order price-item">
                 <span class="price-item__old">
@@ -124,8 +129,8 @@
               <h1 class="promo__item-title">Декаф Флэт Уайт</h1>
               <p class="promo__description">
                 Свежесваренный кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком — то, что нужно
-                для расслабления после тяжёлого рабочего дня
+                с&nbsp;натуральным&nbsp;фермерским молоком — то, что нужно
+                для&nbsp;расслабления после тяжёлого рабочего дня
               </p>
               <div class="promo__item-order price-item">
                 <span class="price-item__old">
@@ -154,8 +159,8 @@
               <h1 class="promo__item-title">Декаф Флэт Уайт</h1>
               <p class="promo__description">
                 Свежесваренный кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком — то, что нужно
-                для расслабления после тяжёлого рабочего дня
+                с&nbsp;натуральным&nbsp;фермерским молоком — то, что нужно
+                для&nbsp;расслабления после тяжёлого рабочего дня
               </p>
               <div class="promo__item-order price-item">
                 <span class="price-item__old">
@@ -176,7 +181,7 @@
       <div class="swiper-pagination"></div>
     </section>
     <section class="advantages">
-      <div class="centerer-wrapper">
+      <div class="centerer-wrapper advantages__wrapper">
         <div class="advantages__text section-descriptions">
           <span class="section-descriptions__text">Преимущества</span>
           <h2 class="section-descriptions__title">
@@ -210,7 +215,7 @@
       </div>
     </section>
     <section class="catalog">
-      <div class="centerer-wrapper">
+      <div class="centerer-wrapper catalog__wrapper">
         <div class="catalog__text section-descriptions">
           <span class="section-descriptions__text">Каталог</span>
           <h2 class="section-descriptions__title">
@@ -305,7 +310,7 @@
           </div>
 
         </form>
-        <div class="catalog__wrapper">
+        <div class="catalog__item-wrapper">
           <div class="catalog__select">
             <label>Сортировка: </label>
             <select id="select-category">
@@ -452,7 +457,9 @@
           <div class="catalog__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <button class="pagination__page pagination__page--back" type="button"></button>
+                <button class="pagination__page pagination__page--back" type="button">
+                  <span>Назад</span>
+                </button>
               </li>
               <li class="pagination__item">
                 <button class="pagination__page" type="button">1</button>
@@ -464,7 +471,9 @@
                 <button class="pagination__page" type="button">3</button>
               </li>
               <li class="pagination__item">
-                <button class="pagination__page pagination__page--forward" type="button"></button>
+                <button class="pagination__page pagination__page--forward" type="button">
+                  <span>Вперед</span>
+                </button>
               </li>
             </ul>
           </div>
@@ -474,21 +483,30 @@
   </main>
   <footer class="footer">
     <div class="map">
-      <img class="map__img" src="img/map.png" alt="Яндекс карта" width="320" height="420">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map_desctop.png 1x, img/map_desctop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/map_tablet.png 1x, img/map_tablet@2x.png 2x">
+        <img class="map__img" src="img/map.png" alt="Яндекс карта" width="320" height="420" srcset="img/map@2x.png 2x">
+      </picture>
+      <img>
     </div>
-    <div class="centerer-wrapper">
+    <div class="footer__wrapper-centerer centerer-wrapper">
       <div class="footer__wrapper">
         <section class="footer__social">
           <h3 class="visually-hidden">Социальные сети</h3>
           <p class="footer__logo">
-            <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="footer__logo-element">D</span>
+            <a class="footer__link logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="logo-element footer__logo-element">
+                D<span class="logo-element footer__logo-element--tablet">rink</span>
+              </span>
               <svg width="32" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M32 18C32 20.8737 31.4014 23.5901 30.3369 26H17C19.4627 22.2281 22 17.6606 22 13C22 7.00236 17.9385 1.95335 12.4158 0.453392C13.5681 0.156712 14.7678 0 16 0C24.8366 0 32 8.05888 32 18ZM18 13C18 8.02944 13.9706 4 9 4C2.34935 4 0 12.5071 0 18C0 27.9411 7.16344 36 16 36C20.7387 36 24.9962 33.6825 27.9259 30H9C9.35183 29.5514 9.72025 29.0891 10.0987 28.6142C13.6157 24.2012 18 18.6997 18 13Z"
                   fill="#7859CF"></path>
               </svg>
-              <span class="footer__logo-element">G</span>
+              <span class="logo-element footer__logo-element">
+                G<span class="logo-element footer__logo-element--tablet">o</span>
+              </span>
             </a>
           </p>
           <p class="footer__description">Интернет-магазин кофейных напитков</p>
@@ -554,10 +572,8 @@
             </div>
           </div>
         </section>
-
         <div class="footer__developer">
           <h4 class="footer__developer-title">Разработано в HTML Academy</h4>
-
           <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive"
             aria-label="Перейти на сайт разработчика">
             <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">

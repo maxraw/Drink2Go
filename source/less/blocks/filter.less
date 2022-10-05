@@ -5,11 +5,25 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 678px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    overflow: hidden;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
+  }
+}
+
+.filter__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
   }
 }
 
@@ -43,5 +57,20 @@
     color: @base-primary;
     background-color: @base-white;
     border: @base-white;
+  }
+
+  &--submit {
+    @media (min-width: @tablet-width) {
+      margin-right: 35px;
+    }
+  }
+}
+
+.filter__range {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-basis: 355px;
+    margin: 0 auto;
+    padding-top: 25px;
   }
 }

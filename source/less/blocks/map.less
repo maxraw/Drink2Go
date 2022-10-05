@@ -5,20 +5,19 @@
   &::before {
     content: "";
     position: absolute;
-    top: 48%;
-    left: 50%;
+    top: 40%;
+    left: 60%;
     z-index: 1;
     width: 38px;
-    height: 44px;
-    background-image: url("/img/icon/map-small.svg");
+    height: 50px;
+    background-image: url(/img/icon/map-small.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: 38px 50px;
     transform: translateX(-50%);
 
     @media (min-width: @tablet-width) {
-      top: 0;
-      height: 90px;
+      left: 54%;
     }
 
     @media (min-width: @desktop-width) {
@@ -36,10 +35,10 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    height: 374px;
+    height: 480px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 502px;
+    height: 540px;
   }
 }

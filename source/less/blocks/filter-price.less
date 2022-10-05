@@ -9,17 +9,15 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.filter__title {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-}
-
 .filter-price__inputs {
   width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
 }
 
 .filter-price__input {
@@ -28,8 +26,16 @@ input[type="number"] {
   border: 2px solid @primary-lighter;
   border-radius: 4px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 92px;
+  }
 }
 
 .filter-price__slider {
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+  }
 }
